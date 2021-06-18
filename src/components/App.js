@@ -1,8 +1,7 @@
 import React from 'react';
-import  { ThemeProvider, CSSReset } from '@chakra-ui/core';
 import { HashRouter as Router } from 'react-router-dom';
-import Routes from '../Routes';
-import Navbar from './Navbar';
+import Routes from '../routes/Routes';
+import Navbar from '../views/Navbar';
 
 //custom body and root
 document.body.style.height="100vh"
@@ -12,13 +11,10 @@ document.getElementById("root").style.position="relative";
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <Router>
-        <CSSReset />
+    <Router>
         <Navbar/>
         <Routes />
-      </Router>
-  </ThemeProvider>    
+    </Router>    
   );
 }
 
