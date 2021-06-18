@@ -5,7 +5,9 @@ import MenuIcon from "@material-ui/icons/Menu";
 const Navbar = () => {
   return(
     <AppBar>
-        <Toolbar></Toolbar>
+        <Toolbar>
+            
+        </Toolbar>
     </AppBar>    
   );
 }
