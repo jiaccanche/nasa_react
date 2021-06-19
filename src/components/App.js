@@ -6,6 +6,7 @@ import Navbar from '../views/Navbar';
 //custom body and root
 document.body.style.height="100vh"
 document.getElementById("root").style.height="100%";
+document.body.style.margin="0";
 document.getElementById("root").style.width="100%";
 document.getElementById("root").style.position="relative";
 
