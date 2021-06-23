@@ -19,9 +19,14 @@ const useStyles = makeStyles( () => ( {
         color:"#ffffff",
         fontFamily: "Open Sans, sans-serif",
         fontWeight:"bold",
+        lineHeight:"150%",
         width:"56%",
         textAlign:"center",
-        fontSize:"2.5em"
+        fontSize:"2.5em",
+        "@media (max-width: 900px)": {
+            width:"85%",
+            fontSize:"2.2em",
+          }
     },
     autorText:{
         color:"#ffffff"

@@ -8,13 +8,16 @@ const useStyle = makeStyles( () => ({
     aboutUsBack:{
         backgroundImage: `url(${backgroundImg})`,
         width:"100%",
-        height:"100vh",
         backgroundRepeat:"no-repeat",
         backgroundSize:"cover",
         display:"flex",
+        flexWrap:"wrap",
         flexDirection:"column",
         alignItems:"center",
-        justifyContent:"center"
+        justifyContent:"center",
+        "@media (max-width: 900px)": {
+            background:"#ffffff"
+        }
     },
     avatar:{
         width:"6em",
@@ -53,7 +56,6 @@ const useStyle = makeStyles( () => ({
     },
     container:{
         backgroundImage: `url(${frontImg})`,
-        height:"100vh",
         padding:"2.3em"
     }
 
