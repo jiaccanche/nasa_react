@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import HeroBanner from '../views/HeroBanner'
+import Banner from '../views/Banner'
 
 const Routes = () => {
   return(
     <Switch>
-      <Route path="/home" component= {HeroBanner} />
+      <Route path="/home" component= {Banner} />
       <Redirect from="*" to="/home"/>
     </Switch>
   );
