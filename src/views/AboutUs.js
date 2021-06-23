@@ -1,52 +1,70 @@
 import { Box, Avatar, makeStyles, Grid } from '@material-ui/core';
 import React from 'react';
+const backgroundImg = process.env.PUBLIC_URL + '/sun.png';
 const image = process.env.PUBLIC_URL + '/contact-in-person.png';
+const frontImg = process.env.PUBLIC_URL + '/front.png';
 
 const useStyle = makeStyles( () => ({
+    aboutUsBack:{
+        backgroundImage: `url(${backgroundImg})`,
+        width:"100%",
+        height:"100vh",
+        backgroundRepeat:"no-repeat",
+        backgroundSize:"cover",
+        display:"flex",
+        flexDirection:"column",
+        alignItems:"center",
+        justifyContent:"center"
+    },
     avatar:{
-        width:"5em",
-        height:"5em",
+        width:"6em",
+        height:"6em",
     },
     avatarName:{
-        fontSize:"1.2em",
+        margin:"0.5em",
+        fontSize:"1.1em",
         fontWeight:"900",
         textAlign:"center"
     },
     avatarDetail:{
         margin:"0",
-        fontSize:".9em",
+        fontSize:".95em",
         textAlign:"center",
         color:"#0A395B",
         fontWeight:"200"
     },
     information:{
         fontStyle:"300",
-        fontSize:"1.5em"
+        fontSize:"1.4em",
+        lineHeight:"178%"
     },
     debug:{
         border:"1px solid red",
         //margin:"10px"
     },
     profile:{
-        marginTop:"10px"
+        marginTop:"10px",
+        marginBottom:"1.7em"
     },
     title:{
-        fontSize:"3em",
+        marginTop:"1.7em",
+        fontSize:"2.8em",
         color:"#0A395B"
     },
     container:{
-        margin:"0 auto",
+        backgroundImage: `url(${frontImg})`,
+        height:"100vh",
         padding:"2.3em"
     }
 
 } ) );
 const AboutUs = () => {
-  const { title, avatar, avatarDetail, avatarName, profile, container, debug, information } = useStyle();
+  const { title, avatar, avatarDetail, aboutUsBack, avatarName, profile, container, debug, information } = useStyle();
 
   return(
-    <section>
+    <section className={aboutUsBack}>
         <Grid container className={ container } >
-            <Grid item xs={12} sm={12} > 
+            <Grid item alignItems="baseline" xs={12} sm={9} > 
                 <h1 className={title}>About Us</h1>
             </Grid>
 
