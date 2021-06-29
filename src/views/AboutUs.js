@@ -1,67 +1,11 @@
-import { Box, Avatar, makeStyles, Grid } from '@material-ui/core';
+import { Avatar, Grid } from '@material-ui/core';
 import React from 'react';
-const backgroundImg = process.env.PUBLIC_URL + '/sun.png';
+import { aboutUsStyle } from './Styles';
+
 const image = process.env.PUBLIC_URL + '/contact-in-person.png';
-const frontImg = process.env.PUBLIC_URL + '/front.png';
 
-const useStyle = makeStyles( () => ({
-    aboutUsBack:{
-        backgroundImage: `url(${backgroundImg})`,
-        width:"100%",
-        backgroundRepeat:"no-repeat",
-        backgroundSize:"cover",
-        display:"flex",
-        flexWrap:"wrap",
-        flexDirection:"column",
-        alignItems:"center",
-        justifyContent:"center",
-        "@media (max-width: 900px)": {
-            background:"#ffffff"
-        }
-    },
-    avatar:{
-        width:"6em",
-        height:"6em",
-    },
-    avatarName:{
-        margin:"0.5em",
-        fontSize:"1.1em",
-        fontWeight:"900",
-        textAlign:"center"
-    },
-    avatarDetail:{
-        margin:"0",
-        fontSize:".95em",
-        textAlign:"center",
-        color:"#0A395B",
-        fontWeight:"200"
-    },
-    information:{
-        fontStyle:"300",
-        fontSize:"1.4em",
-        lineHeight:"178%"
-    },
-    debug:{
-        border:"1px solid red",
-        //margin:"10px"
-    },
-    profile:{
-        marginTop:"10px",
-        marginBottom:"1.7em"
-    },
-    title:{
-        marginTop:"1.7em",
-        fontSize:"2.8em",
-        color:"#0A395B"
-    },
-    container:{
-        backgroundImage: `url(${frontImg})`,
-        padding:"2.3em"
-    }
-
-} ) );
 const AboutUs = () => {
-  const { title, avatar, avatarDetail, aboutUsBack, avatarName, profile, container, debug, information } = useStyle();
+  const { title, avatar, avatarDetail, aboutUsBack, avatarName, profile, container, information } = aboutUsStyle();
 
   return(
     <section className={aboutUsBack}>
