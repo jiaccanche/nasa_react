@@ -38,7 +38,7 @@ export const heroBannerStyles = makeStyles( () => ( {
         color:"#ffffff"
     },
     bannerButton:{
-        borderRadius:"3%",
+        borderRadius:"25px",
         background:"#027DC1",
         border: "1px solid white",
         marginTop:"1em"

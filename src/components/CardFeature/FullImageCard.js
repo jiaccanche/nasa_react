@@ -52,11 +52,18 @@ export const cardFeatureStyle = makeStyles({
     overflow:"hidden",
     display:"flex",
     justifyContent:"flex-end",
-    flexDirection:"column"
+    flexDirection:"column",
+    "@media (max-width: 900px)": {
+      minHeight:300
+    },
+    "@media (max-width: 450px)": {
+      maxHeight:80,
+      minWidth: "95%"
+    }
   },
 
   fiCardContent: {
-    width:"100%",
+    //width:"100%",
     color: "#ffffff"
   },
   fiCardContentTextSecondary: {

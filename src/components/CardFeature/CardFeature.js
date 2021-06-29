@@ -20,16 +20,12 @@ const CardFeature = ({ imagePath }) => {
             title="Contemplative Reptile"
           />
             <FiCardContent className={classes.fiCardContent}>
-                    <div>
-                    <Typography gutterBottom variant="h6" component="h5">
+                    <Typography variant="h6" gutterBottom>
                         Yel laoreet enim urna sed urna 
                     </Typography>
-                    <div>
-                    <Button size="small" color="inherit" variant="outlined">
+                    <Button size="medium" color="inherit" variant="outlined">
                         Learn more
                     </Button>
-                    </div>
-                    </div>
             </FiCardContent>
         </FiCard>
     );
