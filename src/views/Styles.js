@@ -1,5 +1,5 @@
 /**
- * Estilos para cada una de las vistas: banner, about us, learn more
+ * Estilos para cada una de las vistas: banner, about us, learn more, navbar
  */
 import { makeStyles } from '@material-ui/core';
 
@@ -8,10 +8,36 @@ const frontImg = process.env.PUBLIC_URL + '/front.png';
 
 const banner = process.env.PUBLIC_URL + '/gaya_vialactea_effect.png';
 
+export const navBarStyles = makeStyles(() => ({
+    toolbar:{
+        display: "flex",
+        justifyContent: "space-between"
+    },
+    header: {
+        backgroundColor: '#000000',
+        padding:"0.2em",
+        color:'#ffffff',
+        "@media (max-width: 900px)": {
+            paddingLeft: 0,
+        }
+    },
+    menuButton: {
+        textTransform: "none",
+        fontFamily: "Open Sans, sans-serif",
+        fontWeight: 700,
+        size: "18px",
+        marginLeft: "38px",
+    },
+    drawerContainer:{
+        padding: "20px 30px"
+    }
+    
+}));
+
 export const heroBannerStyles = makeStyles( () => ( {
     bannerBox:{
         //backgroundImage: `linear-gradient(179.68deg, rgba(10, 57, 91, 0) 100.09%, #FFFFFF 110.8%), radial-gradient(50% 50% at 50% 50%, #0A395B 0%, rgba(0, 0, 0, 0.15) 100%), url(${banner})`,
-        backgroundImage: `url(${banner})`,
+        backgroundImage: `radial-gradient(circle, rgba(10,57,80,0) 95%, rgba(255,255,255,0.6) 100%), url(${banner})`,
         width:"100%",
         height:"100vh",
         backgroundRepeat:"no-repeat",

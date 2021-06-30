@@ -1,0 +1,22 @@
+[
+  {
+    "section": true,
+    "label": "Inicio",
+    "href": "/#home"
+  },
+  {
+    "section": true,
+    "label": "Objetivo",
+    "href": "/#objective"
+  },
+  {
+    "section": true,
+    "href": "/#about",
+    "label": "Acerca de nosotros"
+  },
+  {
+    "section": true,
+    "label": "Saber más",
+    "href": "/#learnMore"
+  }
+]

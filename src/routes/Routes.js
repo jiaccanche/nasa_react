@@ -5,8 +5,7 @@ import Banner from '../views/Banner'
 const Routes = () => {
   return(
     <Switch>
-      <Route path="/home" component= {Banner} />
-      <Redirect from="*" to="/home"/>
+      <Route path="/" component= {Banner} />
     </Switch>
   );
 }

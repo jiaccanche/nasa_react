@@ -7,25 +7,25 @@ const hubble = process.env.PUBLIC_URL + '/hubble.png';
 const stars = process.env.PUBLIC_URL + '/stars.png';
 
 const LearnMore = () => {
-  const { title, container, sectionView  } = learnMoreStyle();
+  const { title, container, sectionView } = learnMoreStyle();
 
-  return(
-    <section className={sectionView}>
-        <Grid container className={ container } >
-            <Grid item xs={12} sm={12} > 
-                <h1 className={title}> Conoce más </h1>
-            </Grid>
+  return (
+    <section className={sectionView} id={'learnMore'} >
+      <Grid container className={container} >
+        <Grid item xs={12} sm={12} >
+          <h1 className={title}> Conoce más </h1>
+        </Grid>
 
-            <Grid container item direction="row" justify="center" xs={12} sm={12} >
-                
-                <CardFeature imagePath= { hubble } />
+        <Grid container item direction="row" justify="center" xs={12} sm={12} >
 
-                <CardFeature imagePath= { stars } />
+          <CardFeature imagePath={hubble} />
 
-            </Grid>
+          <CardFeature imagePath={stars} />
 
         </Grid>
-        
+
+      </Grid>
+
     </section>
   );
 }
