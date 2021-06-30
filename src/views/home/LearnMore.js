@@ -1,6 +1,6 @@
 import { Grid } from '@material-ui/core';
 import React from 'react';
-import CardFeature from '../components/CardFeature/CardFeature';
+import CardFeature from '../../components/CardFeature/CardFeature';
 import { learnMoreStyle } from './Styles';
 
 const hubble = process.env.PUBLIC_URL + '/hubble.png';

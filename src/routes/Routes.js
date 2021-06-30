@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import Banner from '../views/Banner'
+import Banner from '../views/home/Banner'
 
 const Routes = () => {
   return(

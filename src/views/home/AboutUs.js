@@ -1,6 +1,6 @@
 import { Avatar, Grid } from '@material-ui/core';
 import React from 'react';
-import { aboutUsStyle } from './Styles';
+import { aboutUsStyle } from '../Styles';
 
 const image = process.env.PUBLIC_URL + '/contact-in-person.png';
 
